@@ -4,13 +4,11 @@ import { UploadCloud } from "lucide-react";
 
 interface UploadDropzoneProps {
   className?: string;
-  endpoint: string;
   onClientUpload?: (file: File) => void;
 }
 
 export function UploadDropzone({
   className,
-  endpoint,
   onClientUpload,
 }: UploadDropzoneProps) {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
